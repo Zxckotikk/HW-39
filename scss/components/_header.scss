@@ -1,0 +1,49 @@
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width: 768px){
+      padding-top: 26px;
+    padding-bottom: 26px;
+    }
+    @media screen and (min-width: 1200px){
+      padding-top: 44px;
+    padding-bottom: 44px;
+    }
+    &-nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    &-logo {
+      @media (max-width: 767px) {
+          width: 100px;
+      }
+      margin-right: auto;
+    }
+  
+    &-list {
+      @include flexible(94px);
+      // display: flex;
+      // gap: 94px;
+      list-style-type: none;
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 175%;
+      letter-spacing: 0.01em;
+      color: $textColor;
+      @media (max-width: 767px) {
+          display: none;
+      }
+  
+      @media (min-width: 768px) {
+              gap: 50px;
+              display: flex;
+      }
+  
+      @media (min-width: 1200px) {
+              gap: 94px;
+              font-size: 16px;
+      }
+  }
+  }

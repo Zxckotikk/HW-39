@@ -1,0 +1,57 @@
+.header_menu_button{
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px){
+        display: none;
+      }
+    &:hover{
+        background-color: rgba(167, 165, 165, 0.726);
+        border-radius: 50%;
+    }
+}
+.menu_button{
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    &:hover{
+        background-color: gray;
+        color: #ffff;
+}
+}
+.menu_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 196, 0);
+    padding: 32px;
+    transform: translateX(100%);
+}
+.menu_container.is_open{
+    transform: translateX(0%);
+}
+.menu_list{
+    font-size: 26px;
+    background-color: $accentColor;
+    color: antiquewhite;
+}
+.menu_list_item{
+    margin-bottom: 34px;
+}

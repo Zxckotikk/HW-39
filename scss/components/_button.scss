@@ -1,0 +1,15 @@
+.btn {
+    border: 1px solid transparent;
+    cursor: pointer;
+    min-width: 236px;
+    border-radius: 30px;
+    padding: 16px 32px;
+    background-color: $accentColor;
+    color: $whiteColor;
+
+    &-transperent {
+        @extend .btn;
+        border: 1px solid $whiteColor;
+        background-color: transparent;
+    }
+}
